@@ -1,0 +1,8 @@
+#Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.github.rodbate.cloud.mini.config.client.MiniConfigClientAutoConfiguration
+
+#Bootstrap Components
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.github.rodbate.cloud.mini.config.client.MiniConfigPropertySourceLocator,\
+com.github.rodbate.cloud.mini.config.client.MiniConfigClientBootstrapConfiguration

@@ -1,0 +1,8 @@
+
+spring:
+  cloud:
+    mini:
+      config:
+        endpoint: http://localhost:8888/config
+        namespace: test
+        config-names: test.properties

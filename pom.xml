@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.rodbate</groupId>
+	<artifactId>spring-cloud-mini</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+	<name>Spring Cloud Mini</name>
+	<description>Spring Cloud Mini</description>
+	<url>https://github.com/rodbate/spring-cloud-mini</url>
+
+
+	<modules>
+		<module>spring-cloud-mini-config</module>
+	</modules>
+
+	<developers>
+		<developer>
+			<name>rodbate</name>
+			<email>rodbatejss@gmail.com</email>
+			<url>https://github.com/rodbate</url>
+		</developer>
+	</developers>
+
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+
+		<spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+		<spring-cloud-commons.version>2.2.3.RELEASE</spring-cloud-commons.version>
+
+		<lombok.version>1.18.10</lombok.version>
+
+	</properties>
+
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- spring boot -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- spring cloud commons -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-commons-dependencies</artifactId>
+				<version>${spring-cloud-commons.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- lombok -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
+</project>

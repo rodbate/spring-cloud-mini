@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "name": "spring.cloud.mini.config",
+      "type": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.cloud.mini.config.access-key",
+      "type": "java.lang.String",
+      "description": "access key for remote config server",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties"
+    },
+    {
+      "name": "spring.cloud.mini.config.config-names",
+      "type": "java.lang.String",
+      "description": "config name, support multiple configs separated by comma",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties"
+    },
+    {
+      "name": "spring.cloud.mini.config.enabled",
+      "type": "java.lang.Boolean",
+      "description": "config client enable or not",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.cloud.mini.config.endpoint",
+      "type": "java.lang.String",
+      "description": "remote config server endpoint, like \"http:\/\/localhost:8080\/config\" only support standalone config server currently",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "defaultValue": "http:\/\/localhost:8888\/config"
+    },
+    {
+      "name": "spring.cloud.mini.config.fail-fast",
+      "type": "java.lang.Boolean",
+      "description": "whether server fail fast when failed to fetch remote config",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.cloud.mini.config.namespace",
+      "type": "java.lang.String",
+      "description": "config namespace",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "defaultValue": "default"
+    },
+    {
+      "name": "spring.cloud.mini.config.request-connect-timeout",
+      "type": "java.time.Duration",
+      "description": "request connect timeout",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "defaultValue": "5s"
+    },
+    {
+      "name": "spring.cloud.mini.config.request-read-timeout",
+      "type": "java.time.Duration",
+      "description": "request read timeout",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties",
+      "defaultValue": "30s"
+    },
+    {
+      "name": "spring.cloud.mini.config.secret-key",
+      "type": "java.lang.String",
+      "description": "secret key for remote config server",
+      "sourceType": "com.github.rodbate.cloud.mini.config.client.MiniConfigClientProperties"
+    }
+  ],
+  "hints": []
+}
